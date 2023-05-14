@@ -3108,7 +3108,7 @@ https://fpgasoftware.intel.com/eula.
 (junction (pt 368 248))
 (junction (pt 296 152))
 (junction (pt 296 224))
-(text "Circuito para ativar a troca de senha" (rect -96 -104 174 -85)(font "Impact" (color 0 85 0)(font_size 11))(border))
+(text "Circuito para ativar a troca de senha" (rect -120 -104 150 -85)(font "Impact" (color 0 85 0)(font_size 11))(border))
 (text "INSERCAO DE SENHA" (rect -360 104 -232 123)(font "Intel Clear" (font_size 8))(border))
 (text "TROCA DE MODO" (rect -384 352 -279 371)(font "Intel Clear" (font_size 8))(border))
 (text "CONTATO DA PORTA" (rect -392 400 -264 419)(font "Intel Clear" (font_size 8))(border))
