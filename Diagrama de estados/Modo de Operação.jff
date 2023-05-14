@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!--Created with JFLAP 7.1.--><structure>&#13;
+	<type>fa</type>&#13;
+	<automaton>&#13;
+		<!--The list of states.-->&#13;
+		<state id="0" name="I">&#13;
+			<x>90.0</x>&#13;
+			<y>161.0</y>&#13;
+			<initial/>&#13;
+		</state>&#13;
+		<state id="2" name="TR">&#13;
+			<x>193.0</x>&#13;
+			<y>109.0</y>&#13;
+		</state>&#13;
+		<state id="3" name="A">&#13;
+			<x>198.0</x>&#13;
+			<y>217.0</y>&#13;
+		</state>&#13;
+		<!--The list of transitions.-->&#13;
+		<transition>&#13;
+			<from>0</from>&#13;
+			<to>2</to>&#13;
+			<read>BM</read>&#13;
+		</transition>&#13;
+		<transition>&#13;
+			<from>2</from>&#13;
+			<to>0</to>&#13;
+			<read>C</read>&#13;
+		</transition>&#13;
+		<transition>&#13;
+			<from>0</from>&#13;
+			<to>3</to>&#13;
+			<read>C</read>&#13;
+		</transition>&#13;
+		<transition>&#13;
+			<from>3</from>&#13;
+			<to>0</to>&#13;
+			<read>CT</read>&#13;
+		</transition>&#13;
+		<note>&#13;
+			<text>TR = troca de senha
+A = Porta aberta
+I = Inserção de senha</text>&#13;
+			<x>260.0</x>&#13;
+			<y>132.0</y>&#13;
+		</note>&#13;
+	</automaton>&#13;
+</structure>
