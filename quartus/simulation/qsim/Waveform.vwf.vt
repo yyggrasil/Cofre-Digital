@@ -19,7 +19,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "05/14/2023 10:24:35"
+// Generated on "05/14/2023 19:45:03"
                                                                                 
 // Verilog Test Bench (with test vectors) for design :                          Cofre
 // 
@@ -42,6 +42,7 @@ reg [3:0] TeTemp;
 wire [3:0] D0;
 wire [3:0] D1;
 wire [3:0] D2;
+wire [1:0] I;
 wire [1:0] M;
 wire [3:0] MM0;
 wire [3:0] MM1;
@@ -49,6 +50,7 @@ wire [3:0] MM2;
 wire [6:0] N0;
 wire [6:0] N1;
 wire [6:0] N2;
+wire PENTER;
 wire S;
 wire SINAL_CORRETA;
 
@@ -63,6 +65,7 @@ Cofre i1 (
 	.D1(D1),
 	.D2(D2),
 	.ENTER(ENTER),
+	.I(I),
 	.M(M),
 	.MM0(MM0),
 	.MM1(MM1),
@@ -70,6 +73,7 @@ Cofre i1 (
 	.N0(N0),
 	.N1(N1),
 	.N2(N2),
+	.PENTER(PENTER),
 	.RESET(RESET),
 	.S(S),
 	.SINAL_CORRETA(SINAL_CORRETA),
@@ -85,84 +89,104 @@ end
 always
 begin
 	CLOCK = 1'b0;
-	CLOCK = #10000 1'b1;
-	#10000;
+	CLOCK = #1000 1'b1;
+	#1000;
+end 
+
+// RESET
+initial
+begin
+	RESET = 1'b0;
+	RESET = #970000 1'b1;
+	RESET = #20000 1'b0;
 end 
 
 // BM
 initial
 begin
 	BM = 1'b0;
-	BM = #100000 1'b1;
-	BM = #40000 1'b0;
+	BM = #30000 1'b1;
+	BM = #20000 1'b0;
 end 
 
 // C
 initial
 begin
 	C = 1'b0;
+	C = #360000 1'b1;
+	C = #40000 1'b0;
+	C = #260000 1'b1;
+	C = #30000 1'b0;
 end 
 
 // CT
 initial
 begin
-	CT = 1'b0;
-	CT = #860000 1'b1;
-	CT = #40000 1'b0;
+	CT = 1'b1;
+	CT = #770000 1'b0;
+	CT = #160000 1'b1;
 end 
 
 // ENTER
 initial
 begin
 	ENTER = 1'b0;
-	ENTER = #240000 1'b1;
+	ENTER = #120000 1'b1;
 	ENTER = #20000 1'b0;
-	ENTER = #140000 1'b1;
-	ENTER = #20000 1'b0;
-	ENTER = #80000 1'b1;
+	ENTER = #40000 1'b1;
 	ENTER = #30000 1'b0;
 	ENTER = #80000 1'b1;
-	ENTER = #10000 1'b0;
-	ENTER = #70000 1'b1;
-	ENTER = #10000 1'b0;
-	ENTER = #70000 1'b1;
+	ENTER = #40000 1'b0;
+	ENTER = #120000 1'b1;
+	ENTER = #20000 1'b0;
+	ENTER = #60000 1'b1;
+	ENTER = #20000 1'b0;
+	ENTER = #60000 1'b1;
 	ENTER = #20000 1'b0;
 end 
 // TeTemp[ 3 ]
 initial
 begin
 	TeTemp[3] = 1'b0;
-	TeTemp[3] = #210000 1'b1;
-	TeTemp[3] = #80000 1'b0;
-	TeTemp[3] = #300000 1'b1;
-	TeTemp[3] = #50000 1'b0;
+	TeTemp[3] = #270000 1'b1;
+	TeTemp[3] = #90000 1'b0;
+	TeTemp[3] = #240000 1'b1;
+	TeTemp[3] = #40000 1'b0;
 end 
 // TeTemp[ 2 ]
 initial
 begin
 	TeTemp[2] = 1'b0;
+	TeTemp[2] = #100000 1'b1;
+	TeTemp[2] = #60000 1'b0;
+	TeTemp[2] = #280000 1'b1;
+	TeTemp[2] = #40000 1'b0;
 end 
 // TeTemp[ 1 ]
 initial
 begin
 	TeTemp[1] = 1'b0;
-	TeTemp[1] = #380000 1'b1;
-	TeTemp[1] = #70000 1'b0;
+	TeTemp[1] = #100000 1'b1;
+	TeTemp[1] = #60000 1'b0;
+	TeTemp[1] = #10000 1'b1;
+	TeTemp[1] = #50000 1'b0;
+	TeTemp[1] = #220000 1'b1;
+	TeTemp[1] = #40000 1'b0;
+	TeTemp[1] = #40000 1'b1;
+	TeTemp[1] = #40000 1'b0;
 end 
 // TeTemp[ 0 ]
 initial
 begin
 	TeTemp[0] = 1'b0;
-	TeTemp[0] = #210000 1'b1;
-	TeTemp[0] = #80000 1'b0;
-	TeTemp[0] = #200000 1'b1;
-	TeTemp[0] = #80000 1'b0;
-	TeTemp[0] = #20000 1'b1;
-	TeTemp[0] = #50000 1'b0;
-	TeTemp[0] = #30000 1'b1;
+	TeTemp[0] = #100000 1'b1;
 	TeTemp[0] = #60000 1'b0;
-	TeTemp[0] = #10000 1'b1;
-	TeTemp[0] = #80000 1'b0;
+	TeTemp[0] = #110000 1'b1;
+	TeTemp[0] = #90000 1'b0;
+	TeTemp[0] = #80000 1'b1;
+	TeTemp[0] = #40000 1'b0;
+	TeTemp[0] = #120000 1'b1;
+	TeTemp[0] = #40000 1'b0;
 end 
 endmodule
 

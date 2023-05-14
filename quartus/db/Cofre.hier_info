@@ -1,62 +1,49 @@
 |Cofre
 S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-M[0] <= Operacao:inst9.M[0]
-M[1] <= Operacao:inst9.M[1]
-CLOCK => Operacao:inst9.CLOCK
+M[0] <= Operacao:inst99.M[0]
+M[1] <= Operacao:inst99.M[1]
+CLOCK => Operacao:inst99.CLOCK
 CLOCK => inst11.IN0
 CLOCK => Comparador:inst79.CLOCK
-CLOCK => mod_PU:inst100.CLK
-CLOCK => Insercao:inst10.CLOCK
+CLOCK => inst13.IN0
+CLOCK => inst2.IN0
 CT => mod_PU:inst4.P
-D2[0] <= registrador:inst25.MM2[0]
-D2[1] <= registrador:inst25.MM2[1]
-D2[2] <= registrador:inst25.MM2[2]
-D2[3] <= registrador:inst25.MM2[3]
+D2[0] <= registrador:inst9.MM2[0]
+D2[1] <= registrador:inst9.MM2[1]
+D2[2] <= registrador:inst9.MM2[2]
+D2[3] <= registrador:inst9.MM2[3]
+I[0] <= Insercao:inst10.I[0]
+I[1] <= Insercao:inst10.I[1]
+PENTER <= mod_PU:inst6.PU
 ENTER => mod_PU:inst6.P
-TeTemp[0] => registrador:inst25.D1[0]
-TeTemp[0] => registrador:inst25.D2[0]
-TeTemp[0] => registrador:inst25.D3[0]
-TeTemp[0] => registrador:inst20.D1[0]
-TeTemp[0] => registrador:inst20.D2[0]
-TeTemp[0] => registrador:inst20.D3[0]
-TeTemp[1] => registrador:inst25.D1[1]
-TeTemp[1] => registrador:inst25.D2[1]
-TeTemp[1] => registrador:inst25.D3[1]
-TeTemp[1] => registrador:inst20.D1[1]
-TeTemp[1] => registrador:inst20.D2[1]
-TeTemp[1] => registrador:inst20.D3[1]
-TeTemp[2] => registrador:inst25.D1[2]
-TeTemp[2] => registrador:inst25.D2[2]
-TeTemp[2] => registrador:inst25.D3[2]
-TeTemp[2] => registrador:inst20.D1[2]
-TeTemp[2] => registrador:inst20.D2[2]
-TeTemp[2] => registrador:inst20.D3[2]
-TeTemp[3] => registrador:inst25.D1[3]
-TeTemp[3] => registrador:inst25.D2[3]
-TeTemp[3] => registrador:inst25.D3[3]
-TeTemp[3] => registrador:inst20.D1[3]
-TeTemp[3] => registrador:inst20.D2[3]
-TeTemp[3] => registrador:inst20.D3[3]
-D1[0] <= registrador:inst25.MM1[0]
-D1[1] <= registrador:inst25.MM1[1]
-D1[2] <= registrador:inst25.MM1[2]
-D1[3] <= registrador:inst25.MM1[3]
-D0[0] <= registrador:inst25.MM0[0]
-D0[1] <= registrador:inst25.MM0[1]
-D0[2] <= registrador:inst25.MM0[2]
-D0[3] <= registrador:inst25.MM0[3]
-MM2[0] <= registrador:inst20.MM2[0]
-MM2[1] <= registrador:inst20.MM2[1]
-MM2[2] <= registrador:inst20.MM2[2]
-MM2[3] <= registrador:inst20.MM2[3]
-MM1[0] <= registrador:inst20.MM1[0]
-MM1[1] <= registrador:inst20.MM1[1]
-MM1[2] <= registrador:inst20.MM1[2]
-MM1[3] <= registrador:inst20.MM1[3]
-MM0[0] <= registrador:inst20.MM0[0]
-MM0[1] <= registrador:inst20.MM0[1]
-MM0[2] <= registrador:inst20.MM0[2]
-MM0[3] <= registrador:inst20.MM0[3]
+TeTemp[0] => registrador:inst9.B[0]
+TeTemp[0] => registrador:inst3.B[0]
+TeTemp[1] => registrador:inst9.B[1]
+TeTemp[1] => registrador:inst3.B[1]
+TeTemp[2] => registrador:inst9.B[2]
+TeTemp[2] => registrador:inst3.B[2]
+TeTemp[3] => registrador:inst9.B[3]
+TeTemp[3] => registrador:inst3.B[3]
+D1[0] <= registrador:inst9.MM1[0]
+D1[1] <= registrador:inst9.MM1[1]
+D1[2] <= registrador:inst9.MM1[2]
+D1[3] <= registrador:inst9.MM1[3]
+D0[0] <= registrador:inst9.MM0[0]
+D0[1] <= registrador:inst9.MM0[1]
+D0[2] <= registrador:inst9.MM0[2]
+D0[3] <= registrador:inst9.MM0[3]
+MM2[0] <= registrador:inst3.MM2[0]
+MM2[1] <= registrador:inst3.MM2[1]
+MM2[2] <= registrador:inst3.MM2[2]
+MM2[3] <= registrador:inst3.MM2[3]
+MM1[0] <= registrador:inst3.MM1[0]
+MM1[1] <= registrador:inst3.MM1[1]
+MM1[2] <= registrador:inst3.MM1[2]
+MM1[3] <= registrador:inst3.MM1[3]
+MM0[0] <= registrador:inst3.MM0[0]
+MM0[1] <= registrador:inst3.MM0[1]
+MM0[2] <= registrador:inst3.MM0[2]
+MM0[3] <= registrador:inst3.MM0[3]
 C => mod_PU:inst8.P
 BM => mod_PU:inst5.P
 SINAL_CORRETA <= CORRETA.DB_MAX_OUTPUT_PORT_TYPE
@@ -91,7 +78,7 @@ TE[5] => ~NO_FANOUT~
 TE[6] => ~NO_FANOUT~
 
 
-|Cofre|Operacao:inst9
+|Cofre|Operacao:inst99
 M[0] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 M[1] <= inst15.DB_MAX_OUTPUT_PORT_TYPE
 RESET => inst.IN0
@@ -100,7 +87,7 @@ CORRETA => inst7.IN1
 CORRETA => inst12.IN1
 BM => inst7.IN2
 C => inst12.IN2
-C => inst8.IN2
+C => inst1.IN0
 CT => inst3.IN0
 
 
@@ -242,35 +229,44 @@ datab[2] => data_wire[1].IN1
 datab[3] => data_wire[1].IN1
 
 
-|Cofre|registrador:inst25
+|Cofre|registrador:inst9
 MM0[0] <= inst.DB_MAX_OUTPUT_PORT_TYPE
 MM0[1] <= inst40.DB_MAX_OUTPUT_PORT_TYPE
 MM0[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 MM0[3] <= inst8.DB_MAX_OUTPUT_PORT_TYPE
 Reset => inst14.IN0
-WriteD1 => inst6.IN0
-D1[0] => inst.DATAIN
-D1[1] => inst40.DATAIN
-D1[2] => inst1.DATAIN
-D1[3] => inst8.DATAIN
+WriteD1 => inst.CLK
+WriteD1 => inst40.CLK
+WriteD1 => inst1.CLK
+WriteD1 => inst8.CLK
+B[0] => inst.DATAIN
+B[0] => inst7.DATAIN
+B[0] => inst11.DATAIN
+B[1] => inst40.DATAIN
+B[1] => inst9.DATAIN
+B[1] => inst12.DATAIN
+B[2] => inst1.DATAIN
+B[2] => inst2.DATAIN
+B[2] => inst3.DATAIN
+B[3] => inst8.DATAIN
+B[3] => inst10.DATAIN
+B[3] => inst13.DATAIN
 MM1[0] <= inst7.DB_MAX_OUTPUT_PORT_TYPE
 MM1[1] <= inst9.DB_MAX_OUTPUT_PORT_TYPE
 MM1[2] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 MM1[3] <= inst10.DB_MAX_OUTPUT_PORT_TYPE
-WriteD2 => inst4.IN0
-D2[0] => inst7.DATAIN
-D2[1] => inst9.DATAIN
-D2[2] => inst2.DATAIN
-D2[3] => inst10.DATAIN
+WriteD2 => inst7.CLK
+WriteD2 => inst9.CLK
+WriteD2 => inst2.CLK
+WriteD2 => inst10.CLK
 MM2[0] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
 MM2[1] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
 MM2[2] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 MM2[3] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
-WriteD3 => inst5.IN0
-D3[0] => inst11.DATAIN
-D3[1] => inst12.DATAIN
-D3[2] => inst3.DATAIN
-D3[3] => inst13.DATAIN
+WriteD3 => inst11.CLK
+WriteD3 => inst12.CLK
+WriteD3 => inst3.CLK
+WriteD3 => inst13.CLK
 
 
 |Cofre|mod_PU:inst100
@@ -285,10 +281,19 @@ P => inst6.IN0
 I[0] <= instI1.DB_MAX_OUTPUT_PORT_TYPE
 I[1] <= instI.DB_MAX_OUTPUT_PORT_TYPE
 RESET => instI2.IN0
-CLOCK => instI23.IN0
+CLOCK => instI.CLK
+CLOCK => instI1.CLK
 ENTER => instI3.IN0
 ENTER => instI10.IN2
 ENTER => instI7.IN1
+
+
+|Cofre|mod_PU:inst18
+PU <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst1.CLK
+CLK => inst.CLK
+P => inst8.IN0
+P => inst6.IN0
 
 
 |Cofre|mod_PU:inst6
@@ -299,35 +304,44 @@ P => inst8.IN0
 P => inst6.IN0
 
 
-|Cofre|registrador:inst20
+|Cofre|registrador:inst3
 MM0[0] <= inst.DB_MAX_OUTPUT_PORT_TYPE
 MM0[1] <= inst40.DB_MAX_OUTPUT_PORT_TYPE
 MM0[2] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 MM0[3] <= inst8.DB_MAX_OUTPUT_PORT_TYPE
 Reset => inst14.IN0
-WriteD1 => inst6.IN0
-D1[0] => inst.DATAIN
-D1[1] => inst40.DATAIN
-D1[2] => inst1.DATAIN
-D1[3] => inst8.DATAIN
+WriteD1 => inst.CLK
+WriteD1 => inst40.CLK
+WriteD1 => inst1.CLK
+WriteD1 => inst8.CLK
+B[0] => inst.DATAIN
+B[0] => inst7.DATAIN
+B[0] => inst11.DATAIN
+B[1] => inst40.DATAIN
+B[1] => inst9.DATAIN
+B[1] => inst12.DATAIN
+B[2] => inst1.DATAIN
+B[2] => inst2.DATAIN
+B[2] => inst3.DATAIN
+B[3] => inst8.DATAIN
+B[3] => inst10.DATAIN
+B[3] => inst13.DATAIN
 MM1[0] <= inst7.DB_MAX_OUTPUT_PORT_TYPE
 MM1[1] <= inst9.DB_MAX_OUTPUT_PORT_TYPE
 MM1[2] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
 MM1[3] <= inst10.DB_MAX_OUTPUT_PORT_TYPE
-WriteD2 => inst4.IN0
-D2[0] => inst7.DATAIN
-D2[1] => inst9.DATAIN
-D2[2] => inst2.DATAIN
-D2[3] => inst10.DATAIN
+WriteD2 => inst7.CLK
+WriteD2 => inst9.CLK
+WriteD2 => inst2.CLK
+WriteD2 => inst10.CLK
 MM2[0] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
 MM2[1] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
 MM2[2] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
 MM2[3] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
-WriteD3 => inst5.IN0
-D3[0] => inst11.DATAIN
-D3[1] => inst12.DATAIN
-D3[2] => inst3.DATAIN
-D3[3] => inst13.DATAIN
+WriteD3 => inst11.CLK
+WriteD3 => inst12.CLK
+WriteD3 => inst3.CLK
+WriteD3 => inst13.CLK
 
 
 |Cofre|mod_PU:inst8
