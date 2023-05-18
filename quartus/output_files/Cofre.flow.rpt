@@ -1,5 +1,5 @@
 Flow report for Cofre
-Sun May 14 19:45:03 2023
+Wed May 17 20:10:53 2023
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -41,14 +41,14 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Sun May 14 19:45:03 2023       ;
+; Flow Status                        ; Successful - Wed May 17 20:10:53 2023       ;
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; Cofre                                       ;
 ; Top-level Entity Name              ; Cofre                                       ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE115F29C7                               ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 80 / 114,480 ( < 1 % )                      ;
+; Total logic elements               ; 81 / 114,480 ( < 1 % )                      ;
 ;     Total combinational functions  ; 54 / 114,480 ( < 1 % )                      ;
 ;     Dedicated logic registers      ; 41 / 114,480 ( < 1 % )                      ;
 ; Total registers                    ; 41                                          ;
@@ -65,7 +65,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 05/14/2023 19:28:07 ;
+; Start date & time ; 05/17/2023 20:04:52 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Cofre               ;
 +-------------------+---------------------+
@@ -76,7 +76,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID               ; 10995770589202.168410328725252         ; --            ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID               ; 220449202209866.168436469213560        ; --            ; --          ; --                                ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_signal_integrity ;
@@ -97,19 +97,13 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:09     ; 1.0                     ; 4830 MB             ; 00:00:08                           ;
-; Fitter               ; 00:00:18     ; 1.0                     ; 6312 MB             ; 00:00:11                           ;
-; Assembler            ; 00:00:03     ; 1.0                     ; 4694 MB             ; 00:00:01                           ;
-; Timing Analyzer      ; 00:00:02     ; 1.1                     ; 4947 MB             ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4642 MB             ; 00:00:00                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4650 MB             ; 00:00:00                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4642 MB             ; 00:00:00                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4650 MB             ; 00:00:00                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4642 MB             ; 00:00:00                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4650 MB             ; 00:00:00                           ;
+; Analysis & Synthesis ; 00:00:10     ; 1.0                     ; 4831 MB             ; 00:00:07                           ;
+; Fitter               ; 00:00:22     ; 1.0                     ; 6311 MB             ; 00:00:09                           ;
+; Assembler            ; 00:00:02     ; 1.0                     ; 4694 MB             ; 00:00:01                           ;
+; Timing Analyzer      ; 00:00:02     ; 1.1                     ; 4946 MB             ; 00:00:00                           ;
 ; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4642 MB             ; 00:00:00                           ;
 ; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4650 MB             ; 00:00:00                           ;
-; Total                ; 00:00:38     ; --                      ; --                  ; 00:00:21                           ;
+; Total                ; 00:00:37     ; --                      ; --                  ; 00:00:17                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -124,12 +118,6 @@ https://fpgasoftware.intel.com/eula.
 ; Timing Analyzer      ; DESKTOP-3NT2GRQ  ; Windows 10 ; 10.0       ; x86_64         ;
 ; EDA Netlist Writer   ; DESKTOP-3NT2GRQ  ; Windows 10 ; 10.0       ; x86_64         ;
 ; EDA Netlist Writer   ; DESKTOP-3NT2GRQ  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; DESKTOP-3NT2GRQ  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; DESKTOP-3NT2GRQ  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; DESKTOP-3NT2GRQ  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; DESKTOP-3NT2GRQ  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; DESKTOP-3NT2GRQ  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; DESKTOP-3NT2GRQ  ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
@@ -140,12 +128,6 @@ quartus_map --read_settings_files=on --write_settings_files=off Cofre -c Cofre
 quartus_fit --read_settings_files=off --write_settings_files=off Cofre -c Cofre
 quartus_asm --read_settings_files=off --write_settings_files=off Cofre -c Cofre
 quartus_sta Cofre -c Cofre
-quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off Cofre -c Cofre --vector_source="D:/kaue/acesso rapido/Documentos/github/Cofre-Digital/quartus/Waveform.vwf" --testbench_file="D:/kaue/acesso rapido/Documentos/github/Cofre-Digital/quartus/simulation/qsim/Waveform.vwf.vt"
-quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="D:/kaue/acesso rapido/Documentos/github/Cofre-Digital/quartus/simulation/qsim/" Cofre -c Cofre
-quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off Cofre -c Cofre --vector_source="D:/kaue/acesso rapido/Documentos/github/Cofre-Digital/quartus/Waveform.vwf" --testbench_file="D:/kaue/acesso rapido/Documentos/github/Cofre-Digital/quartus/simulation/qsim/Waveform.vwf.vt"
-quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="D:/kaue/acesso rapido/Documentos/github/Cofre-Digital/quartus/simulation/qsim/" Cofre -c Cofre
-quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off Cofre -c Cofre --vector_source="D:/kaue/acesso rapido/Documentos/github/Cofre-Digital/quartus/Waveform.vwf" --testbench_file="D:/kaue/acesso rapido/Documentos/github/Cofre-Digital/quartus/simulation/qsim/Waveform.vwf.vt"
-quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="D:/kaue/acesso rapido/Documentos/github/Cofre-Digital/quartus/simulation/qsim/" Cofre -c Cofre
 quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off Cofre -c Cofre --vector_source="D:/kaue/acesso rapido/Documentos/github/Cofre-Digital/quartus/Waveform.vwf" --testbench_file="D:/kaue/acesso rapido/Documentos/github/Cofre-Digital/quartus/simulation/qsim/Waveform.vwf.vt"
 quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="D:/kaue/acesso rapido/Documentos/github/Cofre-Digital/quartus/simulation/qsim/" Cofre -c Cofre
 

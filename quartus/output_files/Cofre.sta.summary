@@ -3,27 +3,27 @@ Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1200mV 85C Model Setup 'CLOCK'
-Slack : -3.063
-TNS   : -19.391
+Slack : -3.034
+TNS   : -18.906
 
 Type  : Slow 1200mV 85C Model Hold 'CLOCK'
-Slack : 0.269
+Slack : 0.301
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Recovery 'CLOCK'
-Slack : -0.711
-TNS   : -0.711
+Slack : -0.679
+TNS   : -0.679
 
 Type  : Slow 1200mV 85C Model Recovery 'Insercao:inst10|instI'
-Slack : 0.119
+Slack : 0.001
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Removal 'Insercao:inst10|instI'
-Slack : -0.084
-TNS   : -0.468
+Slack : 0.099
+TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Removal 'CLOCK'
-Slack : 0.323
+Slack : 0.353
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLOCK'
@@ -35,27 +35,27 @@ Slack : -1.285
 TNS   : -30.840
 
 Type  : Slow 1200mV 0C Model Setup 'CLOCK'
-Slack : -2.803
-TNS   : -17.168
+Slack : -2.703
+TNS   : -16.534
 
 Type  : Slow 1200mV 0C Model Hold 'CLOCK'
-Slack : 0.129
+Slack : 0.143
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Recovery 'CLOCK'
-Slack : -0.533
-TNS   : -0.533
+Slack : -0.508
+TNS   : -0.508
 
 Type  : Slow 1200mV 0C Model Recovery 'Insercao:inst10|instI'
-Slack : 0.193
+Slack : 0.090
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Removal 'Insercao:inst10|instI'
-Slack : -0.061
-TNS   : -0.300
+Slack : 0.104
+TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Removal 'CLOCK'
-Slack : 0.178
+Slack : 0.199
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLOCK'
@@ -67,32 +67,32 @@ Slack : -1.285
 TNS   : -30.840
 
 Type  : Fast 1200mV 0C Model Setup 'CLOCK'
-Slack : -1.150
-TNS   : -4.930
+Slack : -1.143
+TNS   : -4.690
 
 Type  : Fast 1200mV 0C Model Hold 'CLOCK'
 Slack : 0.178
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Recovery 'Insercao:inst10|instI'
-Slack : -0.111
-TNS   : -0.444
+Slack : -0.238
+TNS   : -0.952
 
 Type  : Fast 1200mV 0C Model Recovery 'CLOCK'
-Slack : 0.138
+Slack : 0.153
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Removal 'CLOCK'
-Slack : 0.226
+Slack : 0.258
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Removal 'Insercao:inst10|instI'
-Slack : 0.326
+Slack : 0.403
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLOCK'
 Slack : -3.000
-TNS   : -21.315
+TNS   : -21.309
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Insercao:inst10|instI'
 Slack : -1.000
