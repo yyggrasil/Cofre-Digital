@@ -2,11 +2,11 @@
 S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 M[0] <= Operacao:inst99.M[0]
 M[1] <= Operacao:inst99.M[1]
+CLOCK => inst2.IN0
 CLOCK => Operacao:inst99.CLOCK
 CLOCK => inst11.IN0
 CLOCK => Comparador:inst79.CLOCK
 CLOCK => inst13.IN0
-CLOCK => inst2.IN0
 CT => mod_PU:inst4.P
 D2[0] <= registrador:inst9.MM2[0]
 D2[1] <= registrador:inst9.MM2[1]
@@ -89,6 +89,14 @@ BM => inst7.IN2
 C => inst12.IN2
 C => inst1.IN0
 CT => inst3.IN0
+
+
+|Cofre|mod_PU:inst20
+PU <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst1.CLK
+CLK => inst.CLK
+P => inst8.IN0
+P => inst6.IN0
 
 
 |Cofre|mod_PU:inst4

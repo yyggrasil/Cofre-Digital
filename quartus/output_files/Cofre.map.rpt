@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Cofre
-Wed May 17 20:05:02 2023
+Thu May 18 16:57:12 2023
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -47,13 +47,13 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed May 17 20:05:02 2023       ;
+; Analysis & Synthesis Status        ; Successful - Thu May 18 16:57:12 2023       ;
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; Cofre                                       ;
 ; Top-level Entity Name              ; Cofre                                       ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 78                                          ;
-;     Total combinational functions  ; 54                                          ;
+; Total logic elements               ; 79                                          ;
+;     Total combinational functions  ; 55                                          ;
 ;     Dedicated logic registers      ; 41                                          ;
 ; Total registers                    ; 41                                          ;
 ; Total pins                         ; 69                                          ;
@@ -155,69 +155,68 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 12          ;
-; Maximum allowed            ; 12          ;
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 12          ;
+; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
 ;     Processor 2            ;   0.0%      ;
-;     Processors 3-12        ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                ;
-+----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                      ; Library ;
-+----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------------+---------+
-; ../mod_PU/mod_PU.bdf             ; yes             ; User Block Diagram/Schematic File  ; D:/kaue/acesso rapido/Documentos/github/Cofre-Digital/mod_PU/mod_PU.bdf           ;         ;
-; ../registrador/registrador.bdf   ; yes             ; User Block Diagram/Schematic File  ; D:/kaue/acesso rapido/Documentos/github/Cofre-Digital/registrador/registrador.bdf ;         ;
-; ../registrador/Cofre.bdf         ; yes             ; User Block Diagram/Schematic File  ; D:/kaue/acesso rapido/Documentos/github/Cofre-Digital/registrador/Cofre.bdf       ;         ;
-; Comparador.bdf                   ; yes             ; User Block Diagram/Schematic File  ; D:/kaue/acesso rapido/Documentos/github/Cofre-Digital/quartus/Comparador.bdf      ;         ;
-; Operacao.bdf                     ; yes             ; User Block Diagram/Schematic File  ; D:/kaue/acesso rapido/Documentos/github/Cofre-Digital/quartus/Operacao.bdf        ;         ;
-; Insercao.bdf                     ; yes             ; User Block Diagram/Schematic File  ; D:/kaue/acesso rapido/Documentos/github/Cofre-Digital/quartus/Insercao.bdf        ;         ;
-; lpm_compare.tdf                  ; yes             ; Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_compare.tdf            ;         ;
-; comptree.inc                     ; yes             ; Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/comptree.inc               ;         ;
-; altshift.inc                     ; yes             ; Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altshift.inc               ;         ;
-; aglobal201.inc                   ; yes             ; Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/aglobal201.inc             ;         ;
-; db/cmpr_qmf.tdf                  ; yes             ; Auto-Generated Megafunction        ; D:/kaue/acesso rapido/Documentos/github/Cofre-Digital/quartus/db/cmpr_qmf.tdf     ;         ;
-; 7447.bdf                         ; yes             ; Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/others/maxplus2/7447.bdf                 ;         ;
-+----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                        ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                              ; Library ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------+---------+
+; ../mod_PU/mod_PU.bdf             ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Kauel/OneDrive/Documentos/Code/Cofre/mod_PU/mod_PU.bdf           ;         ;
+; ../registrador/registrador.bdf   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Kauel/OneDrive/Documentos/Code/Cofre/registrador/registrador.bdf ;         ;
+; ../registrador/Cofre.bdf         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Kauel/OneDrive/Documentos/Code/Cofre/registrador/Cofre.bdf       ;         ;
+; Comparador.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Kauel/OneDrive/Documentos/Code/Cofre/quartus/Comparador.bdf      ;         ;
+; Operacao.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Kauel/OneDrive/Documentos/Code/Cofre/quartus/Operacao.bdf        ;         ;
+; Insercao.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Kauel/OneDrive/Documentos/Code/Cofre/quartus/Insercao.bdf        ;         ;
+; lpm_compare.tdf                  ; yes             ; Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_compare.tdf    ;         ;
+; comptree.inc                     ; yes             ; Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/comptree.inc       ;         ;
+; altshift.inc                     ; yes             ; Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altshift.inc       ;         ;
+; aglobal201.inc                   ; yes             ; Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/aglobal201.inc     ;         ;
+; db/cmpr_qmf.tdf                  ; yes             ; Auto-Generated Megafunction        ; C:/Users/Kauel/OneDrive/Documentos/Code/Cofre/quartus/db/cmpr_qmf.tdf     ;         ;
+; 7447.bdf                         ; yes             ; Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/others/maxplus2/7447.bdf         ;         ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------+---------+
 
 
-+-----------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary               ;
-+---------------------------------------------+-------------+
-; Resource                                    ; Usage       ;
-+---------------------------------------------+-------------+
-; Estimated Total logic elements              ; 78          ;
-;                                             ;             ;
-; Total combinational functions               ; 54          ;
-; Logic element usage by number of LUT inputs ;             ;
-;     -- 4 input functions                    ; 29          ;
-;     -- 3 input functions                    ; 18          ;
-;     -- <=2 input functions                  ; 7           ;
-;                                             ;             ;
-; Logic elements by mode                      ;             ;
-;     -- normal mode                          ; 54          ;
-;     -- arithmetic mode                      ; 0           ;
-;                                             ;             ;
-; Total registers                             ; 41          ;
-;     -- Dedicated logic registers            ; 41          ;
-;     -- I/O registers                        ; 0           ;
-;                                             ;             ;
-; I/O pins                                    ; 69          ;
-;                                             ;             ;
-; Embedded Multiplier 9-bit elements          ; 0           ;
-;                                             ;             ;
-; Maximum fan-out node                        ; CLOCK~input ;
-; Maximum fan-out                             ; 17          ;
-; Total fan-out                               ; 401         ;
-; Average fan-out                             ; 1.72        ;
-+---------------------------------------------+-------------+
++--------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                        ;
++---------------------------------------------+----------------------+
+; Resource                                    ; Usage                ;
++---------------------------------------------+----------------------+
+; Estimated Total logic elements              ; 79                   ;
+;                                             ;                      ;
+; Total combinational functions               ; 55                   ;
+; Logic element usage by number of LUT inputs ;                      ;
+;     -- 4 input functions                    ; 29                   ;
+;     -- 3 input functions                    ; 19                   ;
+;     -- <=2 input functions                  ; 7                    ;
+;                                             ;                      ;
+; Logic elements by mode                      ;                      ;
+;     -- normal mode                          ; 55                   ;
+;     -- arithmetic mode                      ; 0                    ;
+;                                             ;                      ;
+; Total registers                             ; 41                   ;
+;     -- Dedicated logic registers            ; 41                   ;
+;     -- I/O registers                        ; 0                    ;
+;                                             ;                      ;
+; I/O pins                                    ; 69                   ;
+;                                             ;                      ;
+; Embedded Multiplier 9-bit elements          ; 0                    ;
+;                                             ;                      ;
+; Maximum fan-out node                        ; mod_PU:inst100|inst1 ;
+; Maximum fan-out                             ; 18                   ;
+; Total fan-out                               ; 406                  ;
+; Average fan-out                             ; 1.74                 ;
++---------------------------------------------+----------------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -225,7 +224,7 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------+-------------+--------------+
 ; Compilation Hierarchy Node         ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                  ; Entity Name ; Library Name ;
 +------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------+-------------+--------------+
-; |Cofre                             ; 54 (7)              ; 41 (0)                    ; 0           ; 0            ; 0       ; 0         ; 69   ; 0            ; |Cofre                                                               ; Cofre       ; work         ;
+; |Cofre                             ; 55 (8)              ; 41 (0)                    ; 0           ; 0            ; 0       ; 0         ; 69   ; 0            ; |Cofre                                                               ; Cofre       ; work         ;
 ;    |7447:inst19|                   ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Cofre|7447:inst19                                                   ; 7447        ; work         ;
 ;    |7447:inst41|                   ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Cofre|7447:inst41                                                   ; 7447        ; work         ;
 ;    |7447:inst46|                   ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Cofre|7447:inst46                                                   ; 7447        ; work         ;
@@ -255,8 +254,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Register name                         ; Reason for Removal               ;
 +---------------------------------------+----------------------------------+
 ; mod_PU:inst18|inst1                   ; Merged with mod_PU:inst100|inst1 ;
+; mod_PU:inst20|inst1                   ; Merged with mod_PU:inst100|inst1 ;
 ; mod_PU:inst18|inst                    ; Merged with mod_PU:inst100|inst  ;
-; Total Number of Removed Registers = 2 ;                                  ;
+; mod_PU:inst20|inst                    ; Merged with mod_PU:inst100|inst  ;
+; Total Number of Removed Registers = 4 ;                                  ;
 +---------------------------------------+----------------------------------+
 
 
@@ -268,7 +269,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Total registers                              ; 41    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 14    ;
+; Number of registers using Asynchronous Clear ; 16    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
@@ -354,16 +355,16 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; boundary_port         ; 69                          ;
 ; cycloneiii_ff         ; 41                          ;
-;     CLR               ; 14                          ;
-;     plain             ; 27                          ;
-; cycloneiii_lcell_comb ; 54                          ;
-;     normal            ; 54                          ;
+;     CLR               ; 16                          ;
+;     plain             ; 25                          ;
+; cycloneiii_lcell_comb ; 55                          ;
+;     normal            ; 55                          ;
 ;         2 data inputs ; 7                           ;
-;         3 data inputs ; 18                          ;
+;         3 data inputs ; 19                          ;
 ;         4 data inputs ; 29                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 2.00                        ;
-; Average LUT depth     ; 1.38                        ;
+; Average LUT depth     ; 1.41                        ;
 +-----------------------+-----------------------------+
 
 
@@ -382,15 +383,15 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Wed May 17 20:04:51 2023
+    Info: Processing started: Thu May 18 16:56:59 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Cofre -c Cofre
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
-Info (12021): Found 1 design units, including 1 entities, in source file /kaue/acesso rapido/documentos/github/cofre-digital/mod_pu/mod_pu.bdf
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file /users/kauel/onedrive/documentos/code/cofre/mod_pu/mod_pu.bdf
     Info (12023): Found entity 1: mod_PU
-Info (12021): Found 1 design units, including 1 entities, in source file /kaue/acesso rapido/documentos/github/cofre-digital/registrador/registrador.bdf
+Info (12021): Found 1 design units, including 1 entities, in source file /users/kauel/onedrive/documentos/code/cofre/registrador/registrador.bdf
     Info (12023): Found entity 1: registrador
-Info (12021): Found 1 design units, including 1 entities, in source file /kaue/acesso rapido/documentos/github/cofre-digital/registrador/cofre.bdf
+Info (12021): Found 1 design units, including 1 entities, in source file /users/kauel/onedrive/documentos/code/cofre/registrador/cofre.bdf
     Info (12023): Found entity 1: Cofre
 Info (12021): Found 1 design units, including 1 entities, in source file comparador.bdf
     Info (12023): Found entity 1: Comparador
@@ -403,7 +404,7 @@ Warning (275009): Pin "TE" not connected
 Info (12128): Elaborating entity "Operacao" for hierarchy "Operacao:inst99"
 Warning (275008): Primitive "NOT" of instance "inst0" not used
 Warning (275008): Primitive "NOT" of instance "inst2" not used
-Info (12128): Elaborating entity "mod_PU" for hierarchy "mod_PU:inst4"
+Info (12128): Elaborating entity "mod_PU" for hierarchy "mod_PU:inst20"
 Info (12128): Elaborating entity "Comparador" for hierarchy "Comparador:inst79"
 Warning (275011): Block or symbol "LPM_COMPARE" of instance "inst100" overlaps another block or symbol
 Warning (275011): Block or symbol "LPM_COMPARE" of instance "inst102" overlaps another block or symbol
@@ -413,7 +414,7 @@ Info (12133): Instantiated megafunction "Comparador:inst79|LPM_COMPARE:inst100" 
     Info (12134): Parameter "LPM_PIPELINE" = "1"
     Info (12134): Parameter "LPM_WIDTH" = "4"
 Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_qmf.tdf
-    Info (12023): Found entity 1: cmpr_qmf File: D:/kaue/acesso rapido/Documentos/github/Cofre-Digital/quartus/db/cmpr_qmf.tdf Line: 23
+    Info (12023): Found entity 1: cmpr_qmf File: C:/Users/Kauel/OneDrive/Documentos/Code/Cofre/quartus/db/cmpr_qmf.tdf Line: 23
 Info (12128): Elaborating entity "cmpr_qmf" for hierarchy "Comparador:inst79|LPM_COMPARE:inst100|cmpr_qmf:auto_generated" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_compare.tdf Line: 281
 Info (12128): Elaborating entity "registrador" for hierarchy "registrador:inst9"
 Warning (275008): Primitive "NOT" of instance "inst4" not used
@@ -434,14 +435,14 @@ Warning (21074): Design contains 8 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "TE[2]"
     Warning (15610): No output dependent on input pin "TE[1]"
     Warning (15610): No output dependent on input pin "TE[0]"
-Info (21057): Implemented 147 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 148 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 17 input pins
     Info (21059): Implemented 52 output pins
-    Info (21061): Implemented 78 logic cells
+    Info (21061): Implemented 79 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 18 warnings
-    Info: Peak virtual memory: 4831 megabytes
-    Info: Processing ended: Wed May 17 20:05:02 2023
-    Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:07
+    Info: Peak virtual memory: 4743 megabytes
+    Info: Processing ended: Thu May 18 16:57:12 2023
+    Info: Elapsed time: 00:00:13
+    Info: Total CPU time (on all processors): 00:00:28
 
 
