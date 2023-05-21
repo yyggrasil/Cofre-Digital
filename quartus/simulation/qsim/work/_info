@@ -10,23 +10,23 @@ z2
 cModel Technology
 dD:/kaue/acesso rapido/Documentos/facu/Projeto Cofre/quartus/simulation/qsim
 vCofre
-Z0 !s110 1684365054
+Z0 !s110 1684681775
 !i10b 1
-!s100 J0]gQzH=R]BkIQVIR4_DG1
+!s100 [FzW6S]h`JdOl1l[^5i?d0
 Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
-IH9@ScEZ<fCK>@PP=dMdQ^3
+I_2joDjKNHXSd?H_VdKic[1
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 Z3 dD:/kaue/acesso rapido/Documentos/github/Cofre-Digital/quartus/simulation/qsim
-Z4 w1684365053
+Z4 w1684681774
 Z5 8Cofre.vo
 Z6 FCofre.vo
-!i122 134
-L0 32 3424
+!i122 146
+L0 32 3545
 Z7 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z8 !s108 1684365054.000000
+Z8 !s108 1684681775.000000
 Z9 !s107 Cofre.vo|
 Z10 !s90 -work|work|Cofre.vo|
 !i113 1
@@ -36,16 +36,16 @@ n@cofre
 vCofre_vlg_vec_tst
 R0
 !i10b 1
-!s100 ^9nH??P?XC=[oBFQPaAcD3
+!s100 YAc_jO<S@lI2E6bzH;4?Z2
 R1
-If_9P43FdVhc@_k]4]iXbQ1
+InAO;a5>oHM?J<7lh9Q?i_1
 R2
 R3
 R4
 8Waveform.vwf.vt
 FWaveform.vwf.vt
-!i122 135
-L0 30 162
+!i122 147
+L0 30 164
 R7
 r1
 !s85 0
@@ -60,16 +60,16 @@ n@cofre_vlg_vec_tst
 vhard_block
 R0
 !i10b 1
-!s100 `bOcfUbhA9_TNZM9B4>3a1
+!s100 LLI^bKKgOoG21W4iQ1kP32
 R1
-IDl]MU6Q8B?zSf_MG012JL2
+Ig[^9zS1@Bmle>hEVc]`ZG2
 R2
 R3
 R4
 R5
 R6
-!i122 134
-L0 3457 34
+!i122 146
+L0 3578 34
 R7
 r1
 !s85 0

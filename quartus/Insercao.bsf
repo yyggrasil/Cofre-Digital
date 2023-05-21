@@ -21,9 +21,9 @@ https://fpgasoftware.intel.com/eula.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 16 16 136 112)
+	(rect 16 16 136 144)
 	(text "Insercao" (rect 5 0 53 19)(font "Intel Clear" (font_size 8)))
-	(text "inst" (rect 8 75 24 92)(font "Intel Clear" ))
+	(text "inst" (rect 8 107 24 124)(font "Intel Clear" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -46,6 +46,13 @@ https://fpgasoftware.intel.com/eula.
 		(line (pt 0 64)(pt 16 64))
 	)
 	(port
+		(pt 0 80)
+		(input)
+		(text "M[0]" (rect 0 0 28 19)(font "Intel Clear" (font_size 8)))
+		(text "M[0]" (rect 21 75 49 94)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 80)(pt 16 80))
+	)
+	(port
 		(pt 120 32)
 		(output)
 		(text "I[1]" (rect 0 0 21 19)(font "Intel Clear" (font_size 8)))
@@ -60,6 +67,6 @@ https://fpgasoftware.intel.com/eula.
 		(line (pt 120 48)(pt 104 48))
 	)
 	(drawing
-		(rectangle (rect 16 16 104 80))
+		(rectangle (rect 16 16 104 112))
 	)
 )

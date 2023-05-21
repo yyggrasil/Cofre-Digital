@@ -212,6 +212,34 @@
 					"strict" : false
 				},
 				{
+					"name" : "N3[6]",
+					"strict" : false
+				},
+				{
+					"name" : "N3[5]",
+					"strict" : false
+				},
+				{
+					"name" : "N3[4]",
+					"strict" : false
+				},
+				{
+					"name" : "N3[3]",
+					"strict" : false
+				},
+				{
+					"name" : "N3[2]",
+					"strict" : false
+				},
+				{
+					"name" : "N3[1]",
+					"strict" : false
+				},
+				{
+					"name" : "N3[0]",
+					"strict" : false
+				},
+				{
 					"name" : "CLOCK",
 					"strict" : false
 				},
@@ -236,7 +264,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "C",
+					"name" : "BM",
 					"strict" : false
 				},
 				{
@@ -244,7 +272,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "BM",
+					"name" : "C",
 					"strict" : false
 				}
 			]

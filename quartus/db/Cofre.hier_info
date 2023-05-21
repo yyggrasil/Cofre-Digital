@@ -3,7 +3,6 @@ S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 M[0] <= Operacao:inst99.M[0]
 M[1] <= Operacao:inst99.M[1]
 CLOCK => inst2.IN0
-CLOCK => Operacao:inst99.CLOCK
 CLOCK => inst11.IN0
 CLOCK => Comparador:inst79.CLOCK
 CLOCK => inst13.IN0
@@ -68,6 +67,13 @@ N2[3] <= 7447:inst19.OD
 N2[4] <= 7447:inst19.OE
 N2[5] <= 7447:inst19.OF
 N2[6] <= 7447:inst19.OG
+N3[0] <= DModo:inst14.a
+N3[1] <= DModo:inst14.b
+N3[2] <= DModo:inst14.c
+N3[3] <= DModo:inst14.d
+N3[4] <= DModo:inst14.e
+N3[5] <= DModo:inst14.f
+N3[6] <= DModo:inst14.g
 RESET => mod_PU:inst17.P
 TE[0] => ~NO_FANOUT~
 TE[1] => ~NO_FANOUT~
@@ -82,7 +88,8 @@ TE[6] => ~NO_FANOUT~
 M[0] <= inst13.DB_MAX_OUTPUT_PORT_TYPE
 M[1] <= inst15.DB_MAX_OUTPUT_PORT_TYPE
 RESET => inst.IN0
-CLOCK => inst14.IN0
+CLOCK => inst15.CLK
+CLOCK => inst13.CLK
 CORRETA => inst7.IN1
 CORRETA => inst12.IN1
 BM => inst7.IN2
@@ -291,9 +298,12 @@ I[1] <= instI.DB_MAX_OUTPUT_PORT_TYPE
 RESET => instI2.IN0
 CLOCK => instI.CLK
 CLOCK => instI1.CLK
+M[0] => inst5.IN1
+M[0] => inst8.IN1
+M[0] => instI4.IN0
+ENTER => inst9.IN3
 ENTER => instI3.IN0
-ENTER => instI10.IN2
-ENTER => instI7.IN1
+ENTER => inst6.IN2
 
 
 |Cofre|mod_PU:inst18
@@ -432,6 +442,21 @@ OD <= 84.DB_MAX_OUTPUT_PORT_TYPE
 OC <= 83.DB_MAX_OUTPUT_PORT_TYPE
 OB <= 82.DB_MAX_OUTPUT_PORT_TYPE
 OA <= 81.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Cofre|DModo:inst14
+a <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+M[0] => inst.IN0
+M[0] => inst5.IN0
+M[1] => inst1.IN0
+M[1] => inst3.IN0
+M[1] => inst4.IN0
+b <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+c <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+d <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+e <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+f <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+g <= inst.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Cofre|mod_PU:inst17
