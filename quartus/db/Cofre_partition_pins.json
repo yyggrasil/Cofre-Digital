@@ -244,6 +244,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "RESET",
+					"strict" : false
+				},
+				{
 					"name" : "TeTemp[3]",
 					"strict" : false
 				},

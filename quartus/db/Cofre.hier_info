@@ -2,6 +2,8 @@
 S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 M[0] <= Operacao:inst99.M[0]
 M[1] <= Operacao:inst99.M[1]
+RESET => inst25.IN0
+RESET => mod_PU:inst17.P
 CLOCK => inst2.IN0
 CLOCK => inst11.IN0
 CLOCK => Comparador:inst79.CLOCK
@@ -74,7 +76,6 @@ N3[3] <= DModo:inst14.d
 N3[4] <= DModo:inst14.e
 N3[5] <= DModo:inst14.f
 N3[6] <= DModo:inst14.g
-RESET => mod_PU:inst17.P
 TE[0] => ~NO_FANOUT~
 TE[1] => ~NO_FANOUT~
 TE[2] => ~NO_FANOUT~
@@ -284,6 +285,14 @@ WriteD3 => inst3.CLK
 WriteD3 => inst13.CLK
 
 
+|Cofre|mod_PU:inst17
+PU <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst1.CLK
+CLK => inst.CLK
+P => inst8.IN0
+P => inst6.IN0
+
+
 |Cofre|mod_PU:inst100
 PU <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 CLK => inst1.CLK
@@ -457,13 +466,5 @@ d <= inst5.DB_MAX_OUTPUT_PORT_TYPE
 e <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 f <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 g <= inst.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|Cofre|mod_PU:inst17
-PU <= inst1.DB_MAX_OUTPUT_PORT_TYPE
-CLK => inst1.CLK
-CLK => inst.CLK
-P => inst8.IN0
-P => inst6.IN0
 
 
