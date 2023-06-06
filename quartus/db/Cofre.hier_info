@@ -76,13 +76,6 @@ N3[3] <= DModo:inst14.d
 N3[4] <= DModo:inst14.e
 N3[5] <= DModo:inst14.f
 N3[6] <= DModo:inst14.g
-TE[0] => ~NO_FANOUT~
-TE[1] => ~NO_FANOUT~
-TE[2] => ~NO_FANOUT~
-TE[3] => ~NO_FANOUT~
-TE[4] => ~NO_FANOUT~
-TE[5] => ~NO_FANOUT~
-TE[6] => ~NO_FANOUT~
 
 
 |Cofre|Operacao:inst99
